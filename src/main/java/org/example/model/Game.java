@@ -104,7 +104,7 @@ public class Game {
         }
         public Game build() throws InvalidBotCountException, InvalidPlayerException, InvalidDimensionException {
             validate();
-            return new Game(players,dimension, winningStrategy);
+            return new Game(this.players,this.dimension, this.winningStrategy);
         }
     }
 
